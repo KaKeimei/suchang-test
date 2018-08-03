@@ -5,14 +5,14 @@ package test4;
  */
 public class Test402 {
 	Test402(String i) {
-			System.out.println("Creating test402 with " + i);
+		System.out.println("Creating test402 with " + i);
 
-		}
+	}
 
-		public static void main(String[] args) {
-			String string = "su chang";
-			new Test402(string);
+	public static void main(String[] args) {
+		String string = "su chang";
+		new Test402(string);
 
-		}
+	}
 
 }
