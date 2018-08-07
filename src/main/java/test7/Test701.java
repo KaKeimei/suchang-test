@@ -9,7 +9,7 @@ class Rodent {
 	Rodent() {
 		System.out.println("rodent");
 	}
-	void run() {
+	public void run() {
 		System.out.println("rodent run");
 	}
 }
@@ -18,7 +18,8 @@ class Mouse extends Rodent {
 	Mouse() {
 		System.out.println("mouse");
 	}
-	void run() {
+	@Override
+	public void run() {
 		System.out.println("mouse run");
 	}
 }
@@ -27,7 +28,8 @@ class Gerbil extends Mouse {
 	Gerbil() {
 		System.out.println("gerbil");
 	}
-	void run() {
+	@Override
+	public void run() {
 		System.out.println("gerbil run");
 	}
 }
@@ -36,7 +38,8 @@ class Hamster extends Gerbil {
 	Hamster() {
 		System.out.println("hamster");
 	}
-	void run() {
+	@Override
+	public void run() {
 		System.out.println("hamster run");
 	}
 }
