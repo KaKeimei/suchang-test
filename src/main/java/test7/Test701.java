@@ -48,15 +48,16 @@ public class Test701 {
 			case 1: return new Mouse();
 			case 2: return new Gerbil();
 			case 3: return new Hamster();
+			default: return null;
 		}
 	}
 	public static void main(String[] args) {
-		Test701[] t = new Test701[10];
-		for (int i = 0; i < t.length; i++) {
-			t[i] = ranrat();
+		Rodent[] s = new Rodent[10];
+		for (int i = 0; i < s.length; i++) {
+			s[i] = ranrat();
 		}
-		for (int i = 0;i < t.length; i ++) {
-			t[i].run();
+		for (int i = 0;i < s.length; i ++) {
+			s[i].run();
 		}
 	}
 }
