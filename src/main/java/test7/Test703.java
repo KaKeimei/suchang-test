@@ -17,6 +17,10 @@ class WindX1 extends Ins1 {
 	public void play(int NoteX) {
 		System.out.println("WindX1 played");
 	}
+
+	public void play(NoteX n) {
+		System.out.println("WindX played");
+	}
 }
 
 public class Test703 {

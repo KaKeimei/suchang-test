@@ -1,10 +1,5 @@
 package test7;
 
-import com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl;
-import org.omg.CORBA.ARG_OUT;
-
-import java.sql.SQLOutput;
-
 /**
  * Created by suchang on 2018/08/07
  * p310 7.10(3)
