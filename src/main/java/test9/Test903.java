@@ -13,7 +13,8 @@ public class Test903 {
 		try {
 			f();
 		} catch (Test902.ExClass e) {
-			System.out.println("caught");
+			System.out.println("caught e.printStackTrace: ");
+			e.printStackTrace();
 		}
 	}
 }
