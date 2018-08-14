@@ -7,7 +7,7 @@ import java.util.HashMap;
  */
 public class Test803 {
 	public static void main(String[] args) {
-		HashMap<String, String> dicMap = new HashMap<>();
+		HashMap<String, String> dicMap = new HashMap<String, String>();
 		for (char c = 'a'; c <= 'z'; c++) {
 			dicMap.put(String.valueOf(c), String.valueOf(c).toUpperCase());
 		}
