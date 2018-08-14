@@ -1,27 +1,29 @@
 package test10;
 import java.io.*;
+import java.util.Stack;
 import java.util.Vector;
 
 /**
  * Created by suchang on 2018/08/14
  */
 public class Test1001 {
-	public static void main(String[] args) throws IOException {
-		Vector v = new Vector();
+	public static void main(String[] args) {
+		Vector<String> v = new Vector<>();
 		File file = new File("./Suchang.txt");
 		try {
 			BufferedReader input = new BufferedReader(new FileReader(file));
-			String s = new String();
+			String s;
 			while ((s = input.readLine()) != null) {
 				v.add(s);
 			}
 			input.close();
-			Object[] array = v.toArray();
-			for (int i = array.length - 1; i >= 0; i --) {
-				System.out.println(array[i]);
+			Stack<String> stack = new Stack<>();
+			for (String vectorString : v) {
+				stack.push(vectorString);
 			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			while (!stack.isEmpty()) {
+				System.out.println(stack.pop());
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

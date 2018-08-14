@@ -7,10 +7,14 @@ import java.util.*;
  * Created by suchang on 2018/08/14
  */
 public class Test1005 {
-	 static StringTokenizer st;
-	public static void main(String[] args) throws IOException {
-		Vector v = new Vector();
+	private static StringTokenizer st;
+
+	public static void main(String[] args) {
+		Vector<String> v = new Vector<>();
 		File file = new File("./SuChang.txt");
+		if (!file.exists()) {
+			return;
+		}
 		String specifics = "chapter";
 		try {
 			BufferedReader input = new BufferedReader(new FileReader(file));
@@ -19,22 +23,16 @@ public class Test1005 {
 				v.add(s);
 			}
 			input.close();
-			Object[] array = v.toArray();
-			for (int i = 0; i < array.length; i ++) {
-				String temp = array[i].toString();
+			for (String temp : v) {
 				st = new StringTokenizer(temp);
 				while (st.hasMoreTokens()) {
 					String token = st.nextToken();
 					if (token.equals(specifics)) {
 						System.out.println(temp);
-					} else {
-						continue;
 					}
 				}
 			}
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

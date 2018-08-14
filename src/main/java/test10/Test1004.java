@@ -7,22 +7,19 @@ import java.io.*;
  * Created by suchang on 2018/08/14
  */
 public class Test1004 {
-	public static void main(String[] args) throws IOException {
-		Vector v = new Vector();
+	public static void main(String[] args) {
+		Vector<String> v = new Vector<>();
 		File file = new File("./SuChang.txt");
 		try {
 			BufferedReader input = new BufferedReader(new FileReader(file));
-			String s = new String();
+			String s;
 			while ((s = input.readLine()) != null) {
 				v.add(s);
 			}
 			input.close();
-			Object[] array = v.toArray();
-			for (int i = array.length - 1; i >= 0; i--) {
-				System.out.println(array[i].toString().toUpperCase());
+			for (int i = v.size() - 1; i >= 0; i--) {
+				System.out.println(v.get(i).toUpperCase());
 			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
