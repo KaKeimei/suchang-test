@@ -49,6 +49,7 @@ public class Test702 {
 		for (int i = 0; i < r.length; i++) {
 			r[i] = ranrat();
 		}
+		System.out.println("HAVING A REST");
 		for (int i = 0;i < r.length; i ++) {
 			r[i].run();
 		}
