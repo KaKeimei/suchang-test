@@ -14,7 +14,7 @@ import java.util.*;
 public class Exercise17 {
 	static String[] gerbilname = {"Fuzzy", "Spot", "Sara", "Uncle", "Sam", "July", "Father"};
 	public static void main(String[] args) {
-		Map<String,Gerbil> map = new HashMap<>();
+		HashMap<String,Gerbil> map = new HashMap<>();
 		for (int i = 0; i < 7; i ++) {
 			map.put(gerbilname[i], new Gerbil(i));
 		}

@@ -3,6 +3,7 @@ package HoldingYourObjects;
 import javafx.beans.binding.When;
 import jdk.nashorn.internal.ir.WhileNode;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 /**
@@ -16,8 +17,8 @@ import java.util.*;
  */
 public class Exercise12 {
 	public static void main(String[] args) {
-		List<Integer> list1 = new ArrayList<>(Arrays.asList(1,2,3,4,5));
-		List<Integer> list2 = new LinkedList<>(Arrays.asList(10,9,8,7,6));
+		ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+		LinkedList<Integer> list2 = new LinkedList<>(Arrays.asList(10,9,8,7,6));
 		ListIterator it = list1.listIterator(5);
 		while (it.hasPrevious()) {
 			list2.add((Integer) it.previous());

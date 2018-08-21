@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class Exercise16 {
 	public static void generate(List<String> sin) {
-		Set<Character> vowels = new TreeSet<>();
+		TreeSet<Character> vowels = new TreeSet<>();
 		Collections.addAll(vowels,'s','u','c','h','a','n','g');
 		int countall = 0;
 		for (String s : sin) {
@@ -28,7 +28,7 @@ public class Exercise16 {
 	}
 
 	public static void main(String[] args) {
-		List<String> sin = new ArrayList<>();
+		ArrayList<String> sin = new ArrayList<>();
 		File file = new File("./SuChang.txt");
 		try {
 			if (!file.exists()) {

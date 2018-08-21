@@ -11,15 +11,16 @@ import java.util.*;
  */
 public class Exercise18 {
 	public static void main(String[] args) {
-		Map<Integer,String> map = new HashMap<>();
+		HashMap<Integer,String> map = new HashMap<>();
 		map.put(3,"A");
 		map.put(1,"B");
 		map.put(4,"C");
 		map.put(2,"D");
+
 		System.out.println(map);
 		Set<Integer> sortintegers = new TreeSet<>(map.keySet());
 		System.out.println(sortintegers);
-		Map<Integer,String> linkedhashmap = new LinkedHashMap<>();
+		LinkedHashMap<Integer,String> linkedhashmap = new LinkedHashMap<>();
 		for (Integer i : sortintegers) {
 			linkedhashmap.put(i, map.get(i));
 		}

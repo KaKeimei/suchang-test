@@ -24,8 +24,9 @@ public class Exercise14 {
 	public static void main(String[] args) {
 		Exercise14 ex14 = new Exercise14();
 		LinkedList<Integer> linkedList = new LinkedList<>();
-		for (int i = 0; i < 10; i ++) {
-			ex14.add(linkedList, 10);
+		int length = 10;
+		for (int i = 0; i < length; i ++) {
+			ex14.add(linkedList, length);
 		}
 	}
 

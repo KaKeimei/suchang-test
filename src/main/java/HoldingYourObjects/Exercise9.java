@@ -19,7 +19,9 @@ public class Exercise9 {
 			items[next++] = x;
 		}
 	}
-	public Object current() { return items[next]; }
+	public Object current() {
+		return items[next];
+	}
 
 	public static void main(String[] args) {
 		Exercise9 ex9 = new Exercise9(10);

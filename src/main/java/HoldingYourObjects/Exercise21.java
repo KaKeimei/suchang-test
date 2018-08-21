@@ -17,8 +17,8 @@ import java.util.*;
  */
 public class Exercise21 {
 	public static void main(String[] args) {
-		Map<String, Integer> countmap = new TreeMap<>();
-		List<String> orderlist = new LinkedList<>();
+		TreeMap<String, Integer> countmap = new TreeMap<>();
+		LinkedList<String> orderlist = new LinkedList<>();
 		File file = new File("./SuChang.txt");
 		try {
 			if (!file.exists()) {
